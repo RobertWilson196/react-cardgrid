@@ -14,8 +14,39 @@ class App extends Component {
           {
               src: "https://via.placeholder.com/250x250",
               caption: "some other things and stuff",
+              isLiked: false,
+          },
+          {
+              src: "https://via.placeholder.com/250x250",
+              caption: "somethings and stuff",
+              isLiked: true,
+          },
+          {
+              src: "https://via.placeholder.com/250x250",
+              caption: "some other things and stuff",
+              isLiked: true,
+          },
+            {
+              src: "https://via.placeholder.com/250x250",
+              caption: "somethings and stuff",
+              isLiked: false,
+          },
+          {
+              src: "https://via.placeholder.com/250x250",
+              caption: "some other things and stuff",
+              isLiked: true,
+          },
+          {
+              src: "https://via.placeholder.com/250x250",
+              caption: "somethings and stuff",
+              isLiked: false,
+          },
+          {
+              src: "https://via.placeholder.com/250x250",
+              caption: "some other things and stuff",
               isLiked: true,
           }
+          
       ]
     }
   }
