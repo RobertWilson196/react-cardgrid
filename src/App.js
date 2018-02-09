@@ -1,13 +1,32 @@
 import React, { Component } from 'react';
+import Card from './Card';
 
 class App extends Component {
-  super;
-  Constructor() {
-
+  constructor() {
+    super();
+    this.state = {
+      card: [
+          {
+              src: "https://via.placeholder.com/250x250",
+              caption: "somethings and stuff",
+              isLiked: true,
+          },
+          {
+              src: "https://via.placeholder.com/250x250",
+              caption: "some other things and stuff",
+              isLiked: true,
+          }
+      ]
+    }
   }
   render() {
-    return (
-      <h1>hello</h1>
+    const { card } = this.state;
+    return (    
+      <div className="container">
+        Card Grid
+      
+        { card.map(card => <Card />) }
+      </div>
     );
   }
 }
