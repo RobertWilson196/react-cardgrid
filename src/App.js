@@ -21,11 +21,14 @@ class App extends Component {
   }
   render() {
     const { card } = this.state;
+    const CardGrid = card.map((card, index) => <Card key={index} src={card.src} caption={card.caption}
+    isLiked={card.isLiked} />);
     return (    
       <div className="container">
         Card Grid
-      
-        { card.map(card => <Card />) }
+        <div className='row'>
+        { CardGrid }
+        </div>
       </div>
     );
   }
