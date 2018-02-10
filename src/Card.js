@@ -8,7 +8,7 @@ render() {
         <div className='col-md-3'>
             <img src={this.props.src} alt={this.props.caption} />
             <p>{this.props.caption}</p>
-            <i className={classes} style={{color: 'red'}} aria-hidden="true"></i>
+            <i onClick={this.props.onLike} className={classes} style={{color: 'red'}} aria-hidden="true"></i>
         </div>
         );
     }
